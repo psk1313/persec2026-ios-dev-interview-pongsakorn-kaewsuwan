@@ -52,6 +52,7 @@ for testCase in positiveIntTestCase {
     print("\(testCase) ==> \(PositiveInt.sortDescending(testCase))")
 }
 
+/// ข้อที่ 6
 let tribonacciTestCase: [([Int], Int)] = [([1, 3, 5], 5),
                                           ([2, 2, 2], 3),
                                           ([10, 10, 10], 4)]
