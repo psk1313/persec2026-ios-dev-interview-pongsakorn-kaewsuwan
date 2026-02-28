@@ -27,3 +27,8 @@ let arraySorterTestCase: [[String]] = [["TH19", "SG20" , "TH2"],
 for testCase in arraySorterTestCase {
     print("\(testCase) ==> \(ArraySorter.sortCodes(testCase))")
 }
+
+/// ข้อที่ 3
+print(Autocomplete.autocomplete("th",
+                                items: ["Mother", "Think", "Worthy", "Apple", "Android"],
+                                maxResult: 1))
