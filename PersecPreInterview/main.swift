@@ -44,3 +44,11 @@ for testCase in intToRomanTestCase {
 for testCase in romanToIntTestCase {
     print("\(testCase) ==> \(RomanNumeral.romanToInt(testCase))")
 }
+
+/// ข้อที่ 5
+let positiveIntTestCase: [Int] = [3008, 1989, 2679, 9163]
+
+for testCase in positiveIntTestCase {
+    print("\(testCase) ==> \(PositiveInt.sortDescending(testCase))")
+}
+
