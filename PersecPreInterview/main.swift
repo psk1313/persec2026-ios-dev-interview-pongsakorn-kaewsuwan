@@ -32,3 +32,15 @@ for testCase in arraySorterTestCase {
 print(Autocomplete.autocomplete("th",
                                 items: ["Mother", "Think", "Worthy", "Apple", "Android"],
                                 maxResult: 1))
+
+/// ข้อที่ 4
+let intToRomanTestCase: [Int] = [1989, 2000, 68, 109]
+let romanToIntTestCase: [String] = ["MCMLXXXIX", "MM", "LXVIII", "CIX"]
+
+for testCase in intToRomanTestCase {
+    print("\(testCase) ==> \(RomanNumeral.intToRoman(testCase))")
+}
+
+for testCase in romanToIntTestCase {
+    print("\(testCase) ==> \(RomanNumeral.romanToInt(testCase))")
+}
