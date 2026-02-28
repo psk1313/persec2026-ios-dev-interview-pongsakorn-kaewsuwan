@@ -16,3 +16,8 @@ build/
 
 # SwiftPM
 .swiftpm
+
+# Xcode user state
+*.xcuserstate
+*.xcbkplist
+*.xcuserdata
