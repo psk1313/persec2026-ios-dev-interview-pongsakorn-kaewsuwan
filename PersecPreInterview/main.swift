@@ -7,5 +7,15 @@
 
 import Foundation
 
-print("Hello, World!")
+let bracketValidatorTestCase: [String] = ["()",
+                          "([]]",
+                          "([{}])",
+                          "([[{}]]]",
+                          ")",
+                          "(]}])",
+                          "([)]",
+                          "{"]
 
+for testCase in bracketValidatorTestCase {
+    print("\(testCase) => \(BracketValidator.isValid(testCase))")
+}
