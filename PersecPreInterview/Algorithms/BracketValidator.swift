@@ -5,8 +5,6 @@
 //  Created by Pongsakorn Kaewsuwan on 28/2/2569 BE.
 //
 
-import Foundation
-
 struct BracketValidator {
     
     static func isValid(_ input: String) -> Bool {
