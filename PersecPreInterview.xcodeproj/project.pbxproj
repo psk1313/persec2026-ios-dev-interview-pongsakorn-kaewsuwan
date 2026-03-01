@@ -23,9 +23,27 @@
 		D8998D1D2F52CD400063FAF2 /* PersecPreInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersecPreInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D8998D462F5403140063FAF2 /* Exceptions for "PersecPreInterview" folder in "PersecPreInterviewTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Algorithms/ArraySorter.swift,
+				Algorithms/Autocomplete.swift,
+				Algorithms/BracketValidator.swift,
+				Algorithms/PositiveInt.swift,
+				Algorithms/RomanNumeral.swift,
+				Algorithms/Tribonacci.swift,
+			);
+			target = D8998D1C2F52CD400063FAF2 /* PersecPreInterviewTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D8998D0F2F52CC020063FAF2 /* PersecPreInterview */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D8998D462F5403140063FAF2 /* Exceptions for "PersecPreInterview" folder in "PersecPreInterviewTests" target */,
+			);
 			path = PersecPreInterview;
 			sourceTree = "<group>";
 		};
