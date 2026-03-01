@@ -16,24 +16,24 @@ struct ArraySorter {
                 return left.prefix < right.prefix
             }
             
-            return left.numberTrailing < right.numberTrailing
+            return left.numericSuffix < right.numericSuffix
         }
     }
     
-    private static func parse(_ code: String) -> (prefix: String, numberTrailing: Int) {
+    private static func parse(_ code: String) -> (prefix: String, numericSuffix: Int) {
         var prefix = ""
-        var numberTrailing = ""
+        var numericSuffix = ""
         
         for char in code {
             if char.isNumber {
-                numberTrailing.append(char)
-            } else if numberTrailing.isEmpty {
+                numericSuffix.append(char)
+            } else if numericSuffix.isEmpty {
                 prefix.append(char)
             } else {
                 break
             }
         }
         
-        return (prefix, Int(numberTrailing) ?? 0)
+        return (prefix, Int(numericSuffix) ?? 0)
     }
 }

@@ -22,8 +22,6 @@ struct Autocomplete {
         let keywordsLower = keywords.lowercased()
 
         for item in items {
-            guard filtered.count < maxResult else { break }
-            
             let lower = item.lowercased()
             guard let range = lower.range(of: keywordsLower) else { continue }
 
@@ -31,7 +29,10 @@ struct Autocomplete {
             filtered.append((item, position))
         }
         
-        let sorted = filtered.sorted { $0.1 < $1.1 }.map { $0.0 }
+        let sorted = filtered.sorted { $0.1 < $1.1 }
+                    .prefix(maxResult)
+                    .map { $0.0 }
+        
         return sorted
     }
 }
